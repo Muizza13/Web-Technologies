@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 50%;
+            background-color: rgb(243, 236, 255);
+            margin: auto;
+            border: solid 2px black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            learning about forms
+        </h1>
+
+        <h2>
+            text type form
+        </h2>
+
+        <form action="action page" autocomplete="on" novalidate>   
+
+        <label for="firstname">enter your first name</label>
+        <input type="text" id="firstname" name="" placeholder="enter your first name">
+
+        <br><br>
+
+        <label for="lastname">enter your last name</label>
+        <input type="text" id="lastname" name="" value="enter your last name">
+
+        <br><br>
+
+        <label for="email">enter your email id</label>
+        <input type="text" name="email" id="email" placeholder="enter email id">
+
+        
+        <br><br>
+
+        <h2>radio type forms</h2>
+
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+
+
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+
+        <br>
+        <h2>checkboxes</h2>
+
+        <input type="checkbox" name="cse" id="cse">
+        <label for="cse">i like cse</label>
+
+        <br>
+
+        <input type="checkbox" name="ece" id="ece">
+        <label for="ece">i like ece</label>
+
+        <br>
+
+        <input type="checkbox" name="civil" id="civil">
+        <label for="civil">i like civil</label>
+
+        <br>
+
+        <h2>dropdown menu type form</h2>
+
+        <label for="fruit">select a fruit of your choice</label>
+
+        <br>
+
+        <select name="fruits" id="fruits" size="">
+
+              <option value="aam">aam</option>
+                <option value="saib">saib</option>
+                  <option value="kela"> kela<option>
+                    <option value="santara">santara</option>
+                      <option value="amrood">amrood</option>
+                      <option value="choose one" selected>choose one</option>
+
+        </select>
+
+        <br><br>
+<textarea name="info" id="info">read carefully </textarea>
+
+<br>
+<input type="button" name="" id="" value="submit">
+      
+         </form>
+    </div>
+   
+</body>
+</html>
