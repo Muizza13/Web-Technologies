@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Info Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(238, 219, 195);
+      }
+
+      nav {
+        background-color: #ad6767;
+        overflow: hidden;
+      }
+
+      nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+
+      a:hover {
+        background-color: #de1414;
+      }
+
+      .container {
+        display: flex;
+        padding: 20px;
+        gap: 30px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 300px;
+        background-color: aliceblue;
+      }
+
+      table,
+      th,
+      td {
+        border: 3px solid black;
+      }
+      th {
+        background-color: rgb(221, 221, 245);
+      }
+      td {
+        background-color: rgb(197, 240, 227);
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+    </nav>
+    <div class="container">
+      <table>
+        <caption>
+          student details
+        </caption>
+        <tr>
+          <th colspan="2" style="text-align: center">Name</th>
+          <th>Roll No</th>
+        </tr>
+        <tr>
+          <td>Rakiya</td>
+          <td>andrabi</td>
+          <td>101</td>
+        </tr>
+        <tr>
+          <td>hadiya</td>
+          <td>iqbal</td>
+          <td>39</td>
+        </tr>
+        <tr>
+          <td>sabha</td>
+          <td>mushtaq</td>
+          <td>15</td>
+        </tr>
+      </table>
+
+      <table>
+        <caption>
+          phone details
+        </caption>
+        <tr>
+          <th>Name</th>
+          <td>hadiya</td>
+        </tr>
+        <tr>
+          <th rowspan="2">ph no</th>
+          <td>9906561671</td>
+        </tr>
+        <tr>
+          <td>1234567890</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

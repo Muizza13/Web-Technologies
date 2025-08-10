@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISBN Verification</title>
+  </head>
+  <body>
+    <center>
+      <p
+        style="
+          font-weight: 300;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        "
+      >
+        Validate the ISBN of a given book using regular expressions
+      </p>
+      <label for="isbn">Enter ISBN:</label>
+      <input type="text" name="isbn" id="isbn" />
+      <input type="submit" value="Check" id="submit-btn" />
+    </center>
+
+    <script>
+      const btn = document.getElementById("submit-btn");
+      const isbnInput = document.getElementById("isbn");
+
+      const re = /^ISBN(\d{10}|\d{13})$/;
+
+      btn.addEventListener("click", () => {
+        const isbn = isbnInput.value.trim();
+        if (re.test(isbn)) {
+          alert("Valid ISBN!");
+          console.log("VALID");
+        } else {
+          alert("Invalid ISBN.");
+          console.log("INVALID");
+        }
+      });
+    </script>
+  </body>
+</html>

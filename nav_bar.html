@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .abc {
+            display: flex;
+            justify-content: center;
+            border: solid black 2px;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            display: flex;
+            flex-direction:row;
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            padding-right: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: rgb(227, 20, 20);
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 40px;
+            
+        }
+
+        table, th, td {
+            border: solid black 1px;
+ 
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="abc">
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#aboutus">ABOUT US</a></li>
+                <li><a href="#blog">BLOG</a></li>
+            </ul>
+        </nav> 
+    </div>
+
+    <div class="container">
+        <h2>Sample Table</h2>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>alice@example.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bob</td>
+                <td>bob@example.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Charlie</td>
+                <td>charlie@example.com</td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>
